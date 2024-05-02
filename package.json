@@ -1,0 +1,74 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "beautifully": "prettier --single-quote --trailing-comma all --write src/**/*.{js,json,env,md}",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon --inspect index.js",
+    "dev": "nodemon --inspect index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thanhtrung01/DoAnRaTruong.git"
+  },
+  "author": "thanhtrung01",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.6.8",
+    "bcrypt": "^5.0.1",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.2",
+    "bthreads": "^0.5.1",
+    "cloudinary": "^1.35.0",
+    "cookie-parser": "^1.4.6",
+    "cookie-session": "^2.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.1",
+    "express-session": "^1.17.3",
+    "express-unless": "^1.0.0",
+    "googleapis": "^91.0.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.12.8",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.4",
+    "multer-storage-cloudinary": "^4.0.0",
+    "node-pre-gyp": "^0.17.0",
+    "nodemailer": "^6.7.1",
+    "nodemon": "^2.0.15",
+    "num-cpus": "^1.1.0",
+    "openapi": "^1.0.1",
+    "passport-google-plus-token": "^2.1.0",
+    "puppeteer": "^22.6.5",
+    "puppeteer-cluster": "^0.24.0",
+    "puppeteer-extra": "^3.3.6",
+    "puppeteer-extra-plugin-stealth": "^2.11.2",
+    "querystring": "^0.2.1",
+    "selenium-webdriver": "^4.19.0",
+    "slugify": "^1.6.6",
+    "socket.io": "^4.6.1",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^4.6.2",
+    "throng": "^5.0.0",
+    "url": "^0.11.3",
+    "util": "^0.12.5",
+    "validator": "^13.9.0",
+    "yamljs": "^0.3.0",
+    "yarn": "^1.22.18"
+  },
+  "devDependencies": {
+    "husky": "^7.0.4",
+    "lint-staged": "^12.3.7",
+    "nodemon": "^2.0.15",
+    "prettier": "^2.6.2"
+  },
+  "lint-staged": {
+    "**/*": "prettier --write --ignore-unknown"
+  },
+  "keywords": [
+    "Nodejs",
+    "mongodb"
+  ]
+}

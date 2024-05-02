@@ -1,0 +1,19 @@
+version: '3'
+services:
+  app:
+    build: .
+    ports:
+      - "4001:4001"
+    environment:
+      - MONGODB_URL=mongodb+srv://romiePf7zBtFimTx:romiePf7zBtFimTx@cluster0.bvfkqbz.mongodb.net/?retryWrites=true&w=majority
+      - MONGODB_USER=romiePf7zBtFimTx
+      - MONGODB_PASSWORD=romiePf7zBtFimTx
+    links:
+      - db
+  db:
+    image: mongo
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=romiePf7zBtFimTx
+      - MONGO_INITDB_ROOT_PASSWORD=romiePf7zBtFimTx
+    ports:
+      - "27017:27017"
