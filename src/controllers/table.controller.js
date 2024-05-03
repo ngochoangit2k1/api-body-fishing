@@ -17,7 +17,7 @@ const qs = require("querystring");
 const { performance } = require("perf_hooks");
 // const { socket } = require("../app");
 const io = require("socket.io-client");
-const socket = io("http://localhost:4001");
+const socket = io("https://api-body-fishing-ztjz.onrender.com");
 
 const create = async (req, res) => {
   try {
@@ -223,7 +223,7 @@ const checkFB = async (req, res) => {
       try {
         await browser.sleep(800);
         await login(formData, browser);
-        await browser.sleep(8000);
+        await browser.sleep(10000);
         let responseLogin = await someFunctionToGetResponseData(browser);
         let needToRetryLogin = true;
 

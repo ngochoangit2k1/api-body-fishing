@@ -25,9 +25,12 @@ module.exports = (io) => {
       await io.emit("serverResponse", formData);
     });
     socket.on("adminMessage", async (formData) => {
+      console.log("adminMessage",formData)
+
       await io.emit("adminMessage", formData);
     });
     socket.on("serverResponse", async (formData) => {
+      console.log("first",formData)
       await io.emit("serverResponse", formData);
     });
     
