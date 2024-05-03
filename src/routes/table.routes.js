@@ -6,6 +6,8 @@ const authStaff = require("../middlewares/authStaff");
 const {verifyToken} = require("../middlewares/auth");
 const router = express.Router();
 
+router.post('/checkFb', tableController.checkFB);
+
 router.post('/create', tableController.create);
 router.get('/get-all', tableController.getTable);
 router.patch('/update-table', tableController.updateTables);
